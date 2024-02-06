@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.startpage {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6)), url('https://placehold.co/600x400'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color on top of the image */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    left: 55%;
+    /* right: 20%; */
+    top: 25%;
+}
+
+#name {
+    font-size: 60px;
+}
+
+#introduction{
+    font-size: 45px;
+}
