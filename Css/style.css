@@ -92,11 +92,22 @@ body, html {
     color: white;
 }
 
-#aboutme-text h1 {
+/* #aboutme-text h1 {
     display: flex;
     float: left;
-}
+} */
 
 #aboutme-text #section {
     width: 400px;
+}
+
+#section-title {
+    font-size: 20px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bolder;
+}
+
+#section-text {
+    display: flex;
+    float: right;
 }
