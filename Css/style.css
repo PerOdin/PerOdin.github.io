@@ -19,7 +19,7 @@ body, html {
     text-align: center;
 }
 
-.title {
+.intro {
     position: absolute;
     left: 55%;
     /* right: 20%; */
@@ -32,4 +32,11 @@ body, html {
 
 #introduction{
     font-size: 45px;
+}
+
+#title {
+    position: absolute;
+    left: 45%;
+    right: 50%;
+    color: blue;
 }
