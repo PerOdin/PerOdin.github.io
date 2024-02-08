@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/franklin-gothic?styles=17609');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body, html {
     margin: 0;
@@ -44,21 +45,46 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-  
-.project-box {
-    width: var(--card-width); /* Set the width of each card */
-    height: var(--card-height); /* Set the height of each card */
-    margin: 0 20px; /* Adjust margin as needed */
-    text-align: center;
-    
+    width: 100%;
 }
 
-.project-box a {
-    text-decoration: none;
+.projects a {
     color: black;
+    text-decoration: none;
 }
-  
+
+.project-box {
+    width: var(--card-width);
+    height: var(--card-height);
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    border-style: solid;
+    border-radius: 10%;
+    border-width: 2px; /* Add border width */
+    position: relative; /* Necessary for pseudo-element */
+    overflow: hidden; /* Ensure the gradient border doesn't overflow */
+}
+
+.project-box::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place pseudo-element behind the content */
+    border-radius: 10%; /* Adjust border-radius to match .project-box */
+    background: -webkit-linear-gradient(25deg, #1900ff, #751079); /* Gradient background */
+    transition: opacity 0.3s ease; /* Smooth transition for border color */
+    opacity: 0; /* Initially transparent */
+}
+
+.project-box:hover::after {
+    opacity: 0.2; /* Show the gradient border on hover */
+}
+
 
 
 
@@ -72,6 +98,7 @@ body, html {
     width: 450px;
     height: 250px;
     margin-top: 50px;
+    border-radius: 10%;
 }
 
 #name {
@@ -96,6 +123,7 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 500px;
+    padding-bottom: 100px;
 }
 
 #scrollarrow {
@@ -146,4 +174,45 @@ body, html {
     display: flex;
     float: right;
     margin-bottom: 125px;
+}
+
+.temp {
+    margin-top: 200px;
+    margin-left: 20%;
+    padding-bottom: 100px;
+}
+
+.wip-footer {
+    text-align: center; 
+    margin-top: 100px;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#wip-footer h1 {
+    display: inline; /*Make the 3 H1 texts appear in 1 line*/
+    text-align: center;
+}
+
+.wip { /* I need to learn more about this webkit stuff*/
+    background: -webkit-linear-gradient(25deg, #1900ff, #751079);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient { /* I understand Keyframes I think. */
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+.project-box h2,
+.project-box p {
+    color: white;
 }

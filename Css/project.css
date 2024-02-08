@@ -1,0 +1,76 @@
+.project-title {
+    padding: 100px;
+    text-align: center;
+}
+
+.project-title a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 60px;
+    background: 
+        linear-gradient(to right, #353535, #353535),
+        linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.project-title a:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+a:hover,
+a:focus {
+	background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+.project-introduction {
+    width: 100%;
+    /* height: ; */
+}
+
+.project-content-wrapper {
+    display: flex;
+    justify-content: space-between; /* To push the elements apart */
+}
+
+.project-content-wrapper img {
+    width: 40%;
+    border-radius: 10%;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.project-content-text {
+    margin-top: 5%;
+    width: 30%; /* Adjust the width to accommodate text */
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 200px;
+
+}
+
+.project-content-text h1 {
+    font-size: 50px;
+}
+
+.project-content-text p {
+    font-size: 20px;
+}
+
+#wrapper1 img {
+    float: left;
+}
+
+#wrapper2 img {
+    order: 2; /*Dont really know why float right not working but as I have learned. Dont change something that is already working. So Im not going to change this.*/
+}
+
+/* a {
+    text-decoration: none;
+    color: black;
+} */
