@@ -41,8 +41,37 @@ body, html {
 }
 
 .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.project-box {
+    width: var(--card-width); /* Set the width of each card */
+    height: var(--card-height); /* Set the height of each card */
+    margin: 0 20px; /* Adjust margin as needed */
+    text-align: center;
+    
+}
+
+.project-box a {
+    text-decoration: none;
+    color: black;
+}
+  
+
+
+
+#project-name #project-desc {
     width: 100%;
-    height: 500px;
+    text-align: center;
+}
+
+.project-img {
+    /* opacity: 50%; */
+    width: 450px;
+    height: 250px;
+    margin-top: 50px;
 }
 
 #name {
@@ -58,10 +87,15 @@ body, html {
 }
 
 #title {
+    /* position: absolute; */
     position: absolute;
     left: 45%;
     right: 50%;
     color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 500px;
 }
 
 #scrollarrow {
@@ -86,28 +120,30 @@ body, html {
 
 #aboutme-text {
     float: right;
-    border-style: solid;
+    /* border-style: solid; */
     padding: 20px;
-    margin-right: 325px;
+    margin-right: 200px;
     color: white;
 }
 
-/* #aboutme-text h1 {
-    display: flex;
-    float: left;
-} */
+#section {
+    margin: 0px;
+}
 
 #aboutme-text #section {
-    width: 400px;
+    width: 650px;
 }
 
 #section-title {
     font-size: 20px;
-    /* font-family: 'Times New Roman', Times, serif; */
     font-weight: bolder;
+    float: left;
 }
 
 #section-text {
+    text-align: left;
+    width: 350px;
     display: flex;
     float: right;
+    margin-bottom: 125px;
 }
