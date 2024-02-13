@@ -41,6 +41,11 @@ body, html {
     width: 100%;
 }
 
+.projects a {
+    color: black;
+    text-decoration: none;
+}
+
 .projects {
     display: flex;
     justify-content: center;
@@ -48,10 +53,6 @@ body, html {
     width: 100%;
 }
 
-.projects a {
-    color: black;
-    text-decoration: none;
-}
 
 .project-box {
     width: var(--card-width);
@@ -95,8 +96,8 @@ body, html {
 
 .project-img {
     /* opacity: 50%; */
-    width: 450px;
-    height: 250px;
+    max-width: 450px;
+    max-height: 250px;
     margin-top: 50px;
     border-radius: 10%;
 }
@@ -144,12 +145,17 @@ body, html {
 
 #selfportrait {
     margin-left: 100px;
+    width: 25%;
+    opacity: 80%;
+    border-radius: 100px;
+
 }
 
 #aboutme-text {
     float: right;
     /* border-style: solid; */
     padding: 20px;
+    margin-top: 95px;
     margin-right: 200px;
     color: white;
 }
