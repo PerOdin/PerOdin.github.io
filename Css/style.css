@@ -230,3 +230,9 @@ body, html {
     margin-top: 50%;
     opacity: 0.2;
 }
+
+#links{
+    display: flex;
+    padding-left: 45%;
+    padding-right: 45%;
+}
