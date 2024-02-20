@@ -232,7 +232,17 @@ body, html {
 }
 
 #links{
+    /* margin: 50; */
     display: flex;
-    padding-left: 45%;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-left: 40%;
     padding-right: 45%;
+}
+
+#links p {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 100px;
+    justify-content: space-between;
 }
