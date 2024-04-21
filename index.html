@@ -7,24 +7,27 @@
     <title>Odin Haugstad</title>
 </head>
 <body>
-    <div class="startpage">
+
+    <div class="wrapper" id="startpage">
+
         <p id="photo-signature">Photograph by me</p> <!--Yoyoyo-->
         <div class="intro">
             <!-- <h2 id="introduction">Hello! I am</h2> -->
             <h1 id="name">ODIN<br>HAUGSTAD</h1>
             <h1 id="porfolio-button-text">Portfolio</h1><a href="#projects" ><img src="/Graphics/WebArrow.png" alt="Arrow" id="scrollarrow"></a>
         </div>
+
     </div>
 
-    <hr style="border-style: none; margin-top: 100px; margin-bottom: 100px;">
+    <hr style="border-style: none; margin-top: 100px; margin-bottom: 100px;"> <!--Wrapper split-->
 
-    <div class="aboutme"> <!-- ABOUT ME SECTION -->
+    <div class="wrapper" id="aboutme">
         <img src="/Graphics/FormalPic.jpg" alt="Self portrait" id="selfportrait">
         <div id="aboutme-text">
             <div class="text-box">
                 <hr id="section">
                 <h1 id="section-title">BIO</h1>
-                <p id="section-text">I am a 17 year old student seeking an <br>IT-Development internship to learn more and apply my current skills in a real-world setting. I hope to be able to get skilled enough in this craft to be able to land a stable and safe job in the future.</p>
+                <p id="section-text">I am a 17 year old student with an interest in coding and development. I live in Norway and currently do have an Internship as a coder. I really enjoy making games and small projects such as this website.</p>
             </div>
             <div>
                 <hr id="section">
@@ -34,42 +37,41 @@
         </div>
     </div>
 
-    <hr style="border-style: none; margin-top: 100px; margin-bottom: 100px;">
+    <hr style="border-style: none; margin-top: 100px; margin-bottom: 100px;"> <!--Wrapper split-->
 
-    <div class="projects" id="projects">
-        <h1 id="title" style="left: 46.5%;">Projects</h1>
-
-        <!-- Dungeon explorer Project -->
-        <a href="/Projects-posts/DungeonExplorer.html">
-            <div class="project-box">
-                <img src="/Graphics/DungeonExplorer.png" alt="Dungeon explorer gif" class="project-img" id="dungeon-gif">
-                <h2 id="project-name">Dungeon explorer</h2>
-                <p id="project-desc">An indie game project</p>
-            </div>
-        </a>
-
-        <!-- Discord bot. -->
-        <a href="https://github.com/PerOdin/MyGeneralPurposeDiscBot" target="_blank">
-            <div class="project-box">
-                <img src="/Graphics/DiscordBot.png" alt="Discord bot" class="project-img" id="dungeon-gif">
-                <h2 id="project-name">Discord bot</h2>
-                <p id="project-desc">A discord bot using Discord JS a nodeJS module.</p>
-            </div>
-        </a>
-        
-        <!-- This website project -->
-        <div class="project-box">
-            <a href="https://github.com/PerOdin/PerOdin.github.io" target="_blank">
-            <img src="Graphics/ThisWebsite.png" alt="This website screenshot" class="project-img" id="dungeon-gif">
-            <h2 id="project-name">This website</h2>
-            <p id="project-desc">This website was made fully intentional<br> to help with internship applications</p>
+    <div class="wrapper" id="projects">
+        <div class="projects" id="projects">
+            <h1 id="title" style="left: 46.5%;">Projects</h1>
+    
+            <!-- Dungeon explorer Project -->
+            <a href="/Projects-posts/DungeonExplorer.html">
+                <div class="project-box">
+                    <img src="/Graphics/DungeonExplorer.png" alt="Dungeon explorer gif" class="project-img" id="dungeon-gif">
+                    <h2 id="project-name">Dungeon explorer</h2>
+                    <p id="project-desc">An indie game project</p>
+                </div>
             </a>
-        </div>
-
-
-        
+    
+            <!-- Discord bot. -->
+            <a href="https://github.com/PerOdin/MyGeneralPurposeDiscBot" target="_blank">
+                <div class="project-box">
+                    <img src="/Graphics/DiscordBot.png" alt="Discord bot" class="project-img" id="dungeon-gif">
+                    <h2 id="project-name">Discord bot</h2>
+                    <p id="project-desc">A discord bot using Discord JS a nodeJS module.</p>
+                </div>
+            </a>
+            
+            <!-- This website project -->
+            <div class="project-box">
+                <a href="https://github.com/PerOdin/PerOdin.github.io" target="_blank">
+                <img src="Graphics/ThisWebsite.png" alt="This website screenshot" class="project-img" id="dungeon-gif">
+                <h2 id="project-name">This website</h2>
+                <p id="project-desc">This website was made fully intentional<br> to help with internship applications</p>
+                </a>
+            </div>            
+        </div>    
     </div>
-
+    
     <br><br><br><!-- Next line for propjects. I have to fix this by making a wrapper around all these that will push them to next line on its own. Not gonna bother doing that yet but I'm going to do it. One day :D -->
 
     <!-- Tools made for different things. -->
